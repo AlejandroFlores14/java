@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8">
+	<title>Funciones</title>
+	<link rel="stylesheet" type="text/css" href="css/e2.css"/>
+</head>
+<header>
+	
+	<img src="img/logo.png" id="cabe"><h1 id="titu">Wallpapers</h1>
+		<nav id="menuP">
+
+               <ul >
+                   <li><a href= "index.html"><h3>Inicio</h3>  </a></li>
+                   
+                   <li><a href= "ej1.html"><h3 >Ejercicio 1 </h3>  </a></li>
+                   
+                   <li><a href= "ejer2.html"><h3>Ejercicio 2</h3>  </a></li>
+                   
+                   <li><a href= "ejer3.html"><h3>Ejercicio 3</h3> </a></li>
+                   
+                   <li><a href= "calcu.html"><h3>Calculadora</h3> </a></li>
+
+                   <li><a href= "factorial.html"><h3>Factorial</h3> </a></li>
+                   
+			   </ul> 
+		</nav>
+		
+	</header>
+<!--Completar este ejercicio de tarea-->
+<body>
+	<center>
+	<section>
+	<form name="numeros">
+		<h1>Ingresa numero 1</h1>
+	<input type="text" name="num1"><br>
+	<h1>Ingresa numero 2</h1>
+	<input type="text" name="num2"><br><br>
+	<input type="button" value="suma" onclick="Sumar(this.numeros);"/>
+	<input type="button" value="resta" onclick="Restar(this.numeros);"/>
+	<input type="button" value="multiplicar" onclick="Multi(this.numeros);"/>
+	<input type="button" value="division" onclick="Divi(this.numeros);"/>
+	</form>
+	<br>
+	<textarea cols="20" rows="10" id="salida"></textarea>
+	<br>
+	</section>
+	
+	<script type="text/javascript">
+		 
+		 
+		function Sumar(numeros){
+			var p=parseInt(document.numeros.num1.value); 
+		 	var s=parseInt(document.numeros.num2.value);
+			document.getElementById("salida").innerHTML=p+s;
+		}
+		function Restar(numeros){
+			var p=parseInt(document.numeros.num1.value); 
+		 	var s=parseInt(document.numeros.num2.value);
+			document.getElementById("salida").innerHTML=p-s;
+		}
+		function Multi(numeros){
+			var p=parseInt(document.numeros.num1.value); 
+		 	var s=parseInt(document.numeros.num2.value);
+			document.getElementById("salida").innerHTML=p*s;
+		}
+		function Divi(numeros){
+			var p=parseInt(document.numeros.num1.value); 
+		 	var s=parseInt(document.numeros.num2.value);
+			document.getElementById("salida").innerHTML=p/s;
+		}
+	</script>
+</center>
+<footer > 
+    <section id="izq">
+      <p id="top">Bernardo Alejandro Sánchez Flores</p>
+      <p>12/06/2020</p>
+      <p>Correo Electronico:familiaflores019@gmail.com</p>
+      
+    </section>
+  <section id="dere">
+      <p id="top"><img src="img/alex.jpg"></p>
+      
+      
+    </section>
+
+  </footer>
+
+</body>
+</html>
