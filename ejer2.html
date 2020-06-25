@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8">
+	<title>Votos</title>
+	<link rel="stylesheet" type="text/css" href="css/e2.css"/>
+</head>
+<header>
+	
+	<img src="img/logo.png" id="cabe"><h1 id="titu">Wallpapers</h1>
+		<nav id="menuP">
+
+               <ul >
+                   <li><a href= "index.html"><h3>Inicio</h3>  </a></li>
+                   
+                   <li><a href= "ej1.html"><h3 >Ejercicio 1 </h3>  </a></li>
+                   
+                   <li><a href= "ejer2.html"><h3>Ejercicio 2</h3>  </a></li>
+                   
+                   <li><a href= "ejer3.html"><h3>Ejercicio 3</h3> </a></li>
+                   
+                   <li><a href= "calcu.html"><h3>Calculadora</h3> </a></li>
+
+                   <li><a href= "factorial.html"><h3>Factorial</h3> </a></li>
+                   <!--segunda parte-->
+                   <li><a href= "felicitacion.html"><h3>Tarjeta de Felicitación</h3> </a></li>
+                   <br>
+                   <li><a href= "dom1.html"><h3>Dom1</h3> </a></li>
+                   <li><a href= "dom2.html"><h3>Dom2</h3> </a></li>
+                   <li><a href= "dom3.html"><h3>Dom3</h3> </a></li>
+                   <li><a href= "dom4.html"><h3>Dom4</h3> </a></li>
+                   <li><a href= "dom5.html"><h3>Dom5</h3> </a></li>
+                   <li><a href= "dom6.html"><h3>Dom6</h3> </a></li>
+                   <li><a href= "dom7.html"><h3>Dom7</h3> </a></li>
+                   <li><a href= "dom8.html"><h3>Dom8</h3> </a></li>
+                   
+			   </ul> 
+		</nav>
+		
+	</header>
+<body>
+	<center><section>
+		<form action="#" method="post" name="formu">
+			<h1>Elige tu seccion de ciudad para votar</h1>
+			<select name="nombre">
+				<option value="Norte">Norte</option>
+				<option value="Sur">Sur</option>
+				<option value="Centro">Centro</option>
+			</select>
+			<input type="button" onclick="votar();" value="Votar" >
+		</form>
+		<article id="mensaje"></article>
+	</section>
+	<script type="text/javascript">
+		function votar(){
+			switch (document.formu.nombre.value) {
+				case "Norte":
+				document.getElementById("mensaje").innerHTML="Gracias por votar desde el Norte";break;
+				case "Sur":
+				document.getElementById("mensaje").innerHTML="Gracias por votar desde el Sur";break;
+				case "Centro":
+				document.getElementById("mensaje").innerHTML="Gracias por votar desde el Centro";break;
+
+			}
+		}
+	</script>
+</center>
+<footer id="foot"> 
+    <section id="izq">
+      <p id="top">Bernardo Alejandro Sánchez Flores</p>
+      <p>12/06/2020</p>
+      <p>Correo Electronico:familiaflores019@gmail.com</p>
+      
+    </section>
+  <section id="dere">
+      <p id="top"><img src="img/alex.jpg"></p>
+      
+      
+    </section>
+
+  </footer>
+
+</body>
+</html>
